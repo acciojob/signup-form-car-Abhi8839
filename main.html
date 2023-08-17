@@ -10,30 +10,53 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-	<form method="post"><br>
-		<label for="name">Name<br>
+<!-- 	form for car signup -->
+	<form method="post" action=="/action_page.php"><br>
+<!-- name  -->
+		<label for="name">Name :<br>
 			<input type="text" placeholder="Name"id="name"><br>
-		<label for="email">Email<br>
+<!-- email -->
+			<label for="email">Email :<br>
 			<input type="email"  placeholder="Email" id="email">
-     <p> Gender</p>
-			<input type="radio" id="male"  >
+<!-- gender -->
+				<p> Gender :</p>
+			<input type="radio" id="male" name="gender"  >
              <label for="male">Male</label>
-			<input type="radio" id="female">
+			<input type="radio" id="female" name="gender">
 			<label for="female">Female</label>
-			<input type="radio" id="others">
+			<input type="radio" id="others" name="gender">
 			<label for="others">Others</label><br>
 			<br>
-			
-		<label for="cars" placeholder="">Car Brands<br>
-			<select id="cars" >
-         <option value="volvo">Volvo</option>
-         <option value="hyundai">Hyundai</option>
-         <option value="ferrari">Ferrari</option>
-         <option value="audi">Audi</option>
-      </select>
+<!-- car brands -->
+		<label for="cars" >Car Brands :<br>
+			<select id="cars">
+         <option value="" disabled selected hidden>--Please choose an option--</option>
+		<option value="volvo" id="cars">Volvo</option>
+         <option value="hyundai" id="cars">Hyundai</option>
+         <option value="ferrari" id="cars">Ferrari</option>
+         <option value="audi" id="cars">Audi</option>
+      </select> <br><br>
 
-			<label for="age" >Age</label>
-			<input type="number" 
+<!-- age -->
+			<label for="age" >Age : </label>
+			<input type="number" id="age" placeholder="Age"> <br><br>
+<!-- date of birth -->
+			<label for="dob">DOB : </label>
+			<input type="date" id="dob" ><br><br>
+<!-- phone number  -->
+			<label for="phone" >Phone number : </label>
+			<input type="tel" id="phone" placeholder="xxx-xxx-xxxx"><br><br>
+<!-- password  -->
+			<label for="pass" >Password :</label>
+			<input type="password" id="pass" placeholder="Password"><br><br>
+<!-- terms and condition  -->
+			<label for="check">I agree to the TOS : </label><br>
+			<input type="checkbox" id="check">
+			<label for ="check">Yes </label><br><br>
+<!-- button  -->
+			<label for="button"></label>
+			<input type="submit" id="button" value="Submit">
+			
 
 
 			
