@@ -14,15 +14,15 @@
 	<form method="post" action=="/action_page.php"><br>
 <!-- name  -->
 		<label for="name">Name :
-			<input type="text" placeholder="Name"id="name"><br> <br>
+			<input type="text" placeholder="Name"id="name" required><br> <br>
 <!-- email -->
 			<label for="email">Email :
-			<input type="email"  placeholder="Email" id="email">
+			<input type="email"  placeholder="Email" id="email" required>
 <!-- gender -->
 				<p> Gender : </p>
- <input type="radio" name="gender_m" value="male">
+ <input type="radio" name="gender" id="gender_m" value="male"required>
 				<label for="gender_m">Male</label>
- <input type="radio" name="gender_f" value="female"> 
+ <input type="radio" name="gender" id=="gender_f" value="female" required> 
 				<label for="gender_f">Female</label>
  
 			<br>
@@ -39,26 +39,23 @@
 
 <!-- age -->
 			<label for="age" >Age : </label>
-			<input type="number" id="age" placeholder="Age"> <br><br>
+			<input type="number" id="age" placeholder="Age" required> <br><br>
 <!-- date of birth -->
 			<label for="dob">DOB : </label>
-			<input type="date" id="dob" ><br><br>
+			<input type="date" id="dob" required><br><br>
 <!-- phone number  -->
 			<label for="tel" >Phone number : </label>
 			<input type="tel" id="tel" placeholder="xxx-xxx-xxxx"><br><br>
 <!-- password  -->
 			<label for="password" >Password :</label>
-			<input type="password" id="password" placeholder="Password"><br><br>
+			<input type="password" id="password" placeholder="Password" required><br><br>
 <!-- terms and condition  -->
 			<label for="tos">I agree to the TOS : </label><br>
-			<input type="checkbox" id="tos">
+			<input type="checkbox" id="tos" required>
 			<label for ="tos">Yes </label><br><br>
 <!-- button  -->
 			<label for="button"></label>
-			<input type="submit" id="button" value="Submit">
-			
-
-
+			<input type="submit" id="button" value="Submit" required>
 			
 	</form>
 
